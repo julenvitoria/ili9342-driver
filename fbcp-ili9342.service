@@ -1,0 +1,10 @@
+# ***fbcp-ili9342.service***
+[Unit]
+Description=servicio para la copia del framebuffer para pantalla SPI ILI9342
+ 
+[Service]
+ExecStart=/home/pi/ili9342-driver/fbcp-ili9342
+User=root
+
+[Install]
+WantedBy=multi-user.target
